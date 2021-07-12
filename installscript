@@ -63,7 +63,7 @@ sudo rm -rf /usr/local/Cellar /usr/local/.git && brew cleanup
 
 echo 'Install node'
 echo '------------'
-brew install node@8
+brew install node
 
 echo 'Install pkg-config'
 echo '------------------'
@@ -71,7 +71,7 @@ brew install pkg-config
 
 echo 'Install wget'
 echo '------------'
-brew install wget --overwrite
+brew install wget
 
 echo 'Install httpie'
 echo '--------------'
@@ -95,12 +95,14 @@ brew install doctl
 
 echo 'Install brew-cask'
 echo '-----------------'
-brew tap caskroom/cask
-brew install brew-cask
+#brew tap homebrew/cask
+#brew install brew-cask
+
+brew install cask
 
 echo 'Install some nice quicklook plugins'
 echo '-----------------------------------'
-brew cask install --force qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzip webp-quicklook suspicious-package
+brew install --force qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzip webpquicklook suspicious-package
 
 echo 'Install php'
 echo '-----------'
